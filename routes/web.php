@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Task;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +14,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//顯示所有任務的清單
 Route::get('/', function () {
-    return view('welcome');
+    //
+});
+// 增加新的任務
+Route::post('/task', function (Request $request){
+    //
+});
+// 刪除任務
+Route::delete('/task/{task}', function (Task $task){
+    //
 });
